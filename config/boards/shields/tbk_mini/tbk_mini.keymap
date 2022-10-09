@@ -98,12 +98,15 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-   &mo 1  &kp Q &kp W &kp E &kp R &kp T         &kp Y   &kp U &kp I     &kp O   &kp P    &kp BSPC
-   &lt HOTKEY RET &kp A &kp S &kp D &kp F &kp G         &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
-   &kp Y  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp CLCK
-         &mt LGUI BSPC &lt NUMBER SPACE &kp LSHFT    &lt HOTKEY RET     &lt HOTKEY RET &lt SYMBOL SPACE &kp BSPC  &lt HOTKEY RET
-                                  &lt HOTKEY RET     &kp O   
-                               
+   &kp GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
+   &kp ESC  &kp Q &kp W &kp E &kp R &kp T         &kp Y   &kp U &kp I     &kp O   &kp P    &kp EQUAL
+   &kp ENTER &kp A &kp S &kp D &kp F &kp G         &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+   &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
+   &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
+      &mt LCTRL LGUI   &kp DEL       &kp UP   &kp DOWN
+       &tog NUMBER     &reset         &reset  &tog SYMBOL 
+  
+                           
             >;
         };
 
@@ -115,11 +118,11 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-        &kp ESC  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5      &kp N6    &kp N7       &kp N8   &kp N9     &kp N0   &kp DEL
-        &trans   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp LEFT  &kp DOWN     &kp UP   &kp RIGHT  &none    &none
-        &trans   &kp F6 &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12      &none     &none     &none    &none
-                                &trans &trans &trans     &trans    &mo SETTING  &kp DEL
-                        
+       &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12
+       &kp kC_VOL_UP  &kp C_VOL_DN &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS      &kp LEFT  &kp DOWN     &kp UP   &kp RIGHT  &none    &none
+        &kp C_BRI_UP   &kp C_BRI_DN &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS     &kp F11   &kp F12      &none     &none     &none    &none
+        &kp KP_ASTERISK  &KP_SLASH     &kp KP_N1 &kp KP_N2 &kp KP_N3   &kp ENTER             &trans &trans &trans     &trans    &mo SETTING  &kp DEL
+                        &kp KP_N0 &kp KP_DOT &kp BSPC  &kp SPACE
             >;
         };
 
