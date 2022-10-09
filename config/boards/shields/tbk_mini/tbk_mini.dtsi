@@ -49,12 +49,12 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)  RC(3,6)  RC(3,7) RC(3,8) RC(3,9
 		// 	, <&gpio1 11 GPIO_ACTIVE_HIGH>  // B6
 		// 	;
 		row-gpios
-			= <&gpio0 29 GPIO_ACTIVE_HIGH>
-			, <&gpio0 2 GPIO_ACTIVE_HIGH>
-			, <&gpio1 13 GPIO_ACTIVE_HIGH>
-			, <&gpio0 3 GPIO_ACTIVE_HIGH> 
-			, <&gpio0 28  GPIO_ACTIVE_HIGH>
-			, <&gpio1 11  GPIO_ACTIVE_HIGH>
+			= <&gpio0 29 GPIO_PULL_DOWN>
+			, <&gpio0 2 GPIO_PULL_DOWN>
+			, <&gpio1 13 GPIO_PULL_DOWN>
+			, <&gpio0 3 GPIO_PULL_DOWN> 
+			, <&gpio0 28  GPIO_PULL_DOWN>
+			, <&gpio1 11  GPIO_PULL_DOWN>
 			;
 		
 	};
