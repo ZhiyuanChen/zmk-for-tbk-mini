@@ -117,10 +117,10 @@
             bindings = <
        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12 
         &trans  &trans   &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp PLUS
-       &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS
+     &kp STAR  &kp KP_SLASH  &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS
       &bootloader   &bootloader  &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp ENTER
-             &kp KP_N0 &kp DOT
-             &kp KP_DOT  &bootloader    &bootloader   
+             &kp KP_N0 &kp DOT  &kp BSPC
+             &bootloader    &bootloader    &bootloader    &bootloader  
             >;
         };
 
@@ -133,7 +133,7 @@
             label = "SYMBOL";
             bindings = <
         &kp ESC   &kp EXCL  &kp AT   &kp HASH &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-        &trans    &none     &none    &kp SQT  &kp COLON  &kp TILDE      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
+        &bootloader    &bootloader    &none    &kp SQT  &kp COLON  &kp TILDE      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
         &trans    &none     &none    &kp DQT  &kp SEMI   &kp GRAVE      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &none
                                     
                             
