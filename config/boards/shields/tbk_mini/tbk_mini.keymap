@@ -103,9 +103,7 @@
    &kp ENTER &kp A &kp S &kp D &kp F &kp G         &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
-               &mt LCTRL LGUI   &kp DEL              &kp UP   &kp DOWN            
-   &tog NUMBER   &tog SYMBOL     &tog HOTKEY  &tog SETTING  
-                         
+      &tog NUMBER   &tog SYMBOL           &mt LCTRL LGUI   &kp DEL              &kp UP   &kp DOWN     &tog HOTKEY  &tog SETTING                      
             >;
         };
 
@@ -117,7 +115,15 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-       &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12   
+       &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12  
+       
+      &kp kC_VOL_UP  &kp C_VOL_DN &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS      &kp LEFT  &kp DOWN     &kp UP   &kp RIGHT  &none    &none
+       &kp C_BRI_UP   &kp C_BRI_DN &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS     &kp F11   &kp F12      &none     &none     &none    &none
+       &kp KP_ASTERISK  &KP_SLASH     &kp KP_N1 &kp KP_N2 &kp KP_N3   &kp ENTER             &trans &trans &trans     &trans    &mo SETTING  &kp DEL
+                      &kp KP_N0 &kp KP_DOT 
+       
+       
+       
        &bootloader    &bootloader   &bootloader   &bootloader 
             >;
         };
