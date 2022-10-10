@@ -133,7 +133,7 @@
             label = "SYMBOL";
             bindings = <
        &kp ESC   &kp EXCL  &kp AT   &kp HASH &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-        &bootloader    &reset  &none &none &none &none    &bootloader    &bootloader  &reset    &none &none &none &none
+       &none     &none  &none &none &none &bootloader   &bootloader      &reset    &none &none &none &none
        
             >;
         };
