@@ -104,7 +104,7 @@
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
              &mt LCTRL LGUI   &kp DEL              &kp UP   &kp DOWN
-            &tog NUMBER   &tog SETTING            &tog HOTKEY  &tog SYMBOL 
+            &tog NUMBER   &tog SYMBOL         &tog HOTKEY  &tog SETTING 
   
                            
             >;
@@ -118,13 +118,12 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-       &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12
-       &reset     &kp KP_NUM &kp KP_DIV &kp KP_MULT &kp KP_MINUS
-                &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp KP_PLUS
-                &kp KP_N4  &kp KP_N5  &kp KP_N6
-                &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_ENTER
-                &kp KP_N0             &kp KP_DOT
-&bootloader 
+       &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12   
+      &kp kC_VOL_UP  &kp C_VOL_DN   &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp KP_MINUS 
+    &kp kC_VOL_UP  &kp C_VOL_DN     &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS
+  &kp KP_DIV   &kp KP_MULT            &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_ENTER
+                &kp KP_N0             &kp KP_DOT   &kp BSPC  &kp SPACE
+`   ````` `` ` &bootloader   ` &bootloader   ` &bootloader   ` &bootloader 
             >;
         };
 
