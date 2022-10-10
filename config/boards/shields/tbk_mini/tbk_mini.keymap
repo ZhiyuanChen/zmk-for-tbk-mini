@@ -104,7 +104,7 @@
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
              &mt LCTRL LGUI   &kp DEL              &kp UP   &kp DOWN
-            &tog NUMBER   &tog SYMBOL         &tog HOTKEY  &tog SETTING 
+        //     &tog NUMBER   &tog SYMBOL         &tog HOTKEY  &tog SETTING 
   
                            
             >;
