@@ -99,11 +99,11 @@
             label = "DEFAULT";
             bindings = <
    &kp GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
-   &kp ESC  &kp Q &kp W &kp E &kp R &kp T         &kp Y   &kp U &kp I     &kp O   &kp P    &kp EQUAL
+   &mt TAB ESC  &kp Q &kp W &kp E &kp R &kp T         &kp Y   &kp U &kp I     &kp O   &kp P    &kp EQUAL
    &kp ENTER &kp A &kp S &kp D &kp F &kp G         &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
-      &tog NUMBER  &tog SYMBOL   &mt LCTRL LGUI   &kp DEL   &kp UP   &kp DOWN     &tog HOTKEY  &tog SETTING                      
+      &tog NUMBER  &tog SYMBOL   &mt LCTRL LGUI   &mt LALT DEL   &kp UP   &mt  RIGHT_COMMAND DOWN     &tog HOTKEY  &tog SETTING                      
             >;
         };
 
@@ -116,11 +116,11 @@
             label = "NUMBER";
             bindings = <
        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6  &kp F7 &kp F8 &kp F9 &kp F10     &kp F11   &kp F12 
-        &trans  &trans   &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp PLUS
-     &kp STAR  &kp KP_SLASH  &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS
-      &bootloader   &bootloader  &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp ENTER
+        &trans  &trans   &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp PLUS    &none &none &none &none &none &none
+     &kp STAR  &kp KP_SLASH  &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS  &none &none &none &none &none &none
+       &trans  &trans   &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp ENTER
              &kp KP_N0 &kp DOT  &kp BSPC
-             &bootloader    &bootloader    &bootloader    &bootloader  
+             &bootloader    &reset    &reset     &bootloader  
             >;
         };
 
@@ -132,10 +132,10 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-        &kp ESC   &kp EXCL  &kp AT   &kp HASH &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
-        &bootloader    &bootloader    &none    &kp SQT  &kp COLON  &kp TILDE      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
+       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
+        &bootloader    &bootloader    &bootloader    &bootloader &reset &reset    &bootloader    &bootloader  &bootloader    &bootloader  &bootloader    &bootloader
         &trans    &none     &none    &kp DQT  &kp SEMI   &kp GRAVE      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &none
-                                    
+           &bootloader    &reset    &reset     &bootloader    &bootloader    &reset    &reset     &bootloader    &bootloader    &reset    &reset     &bootloader                             
                             
             >;
         };
