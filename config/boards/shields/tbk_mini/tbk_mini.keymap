@@ -103,7 +103,7 @@
    &kp ENTER &kp A &kp S &kp D &kp F &kp G         &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B         &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V)  &mt LSHFT BSPC &lt NUMBER SPACE   &lt NUMBER LEFT &lt NUMBER RIGHT  &kp LBKT  &kp RBKT
-      &tog NUMBER  &tog SYMBOL   &mt LCTRL LGUI   &mt LALT DEL   &kp UP   &mt  RIGHT_COMMAND DOWN     &tog HOTKEY  &tog SETTING                      
+      &tog NUMBER  &mo SYMBOL   &mt LCTRL LGUI   &mt LALT DEL   &kp UP   &mt  RIGHT_COMMAND DOWN     &mo HOTKEY  &mo SETTING                      
             >;
         };
 
@@ -146,8 +146,8 @@
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-    &none &macro_email_q &macro_phone &macro_pass   &none &none        &none &none &none &none &none &none
-    &none &macro_email_g &none        &macro_pass_2 &none &none        &none &none &none &none &none &none
+   &none &none        &none        &none       &none &none        &none &none &none &none &none &none
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR         &kp N3 &kp N3 &kp N3 &kp N3 &kp N3 &kp N3
     &none &none        &none        &none       &none &none        &none &none &none &none &none &none
                                           
                                   
@@ -158,12 +158,13 @@
 // | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ | | RGB TOG |     |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
 // | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- | |         |     |       |     |     |     |     |        |
 // |          |          |          |          | |         |     | RESET |     |     |     |     |        |
-//                                  |          | |         |     |       |     |     |
+//                                  |          | |         |     |       |     |     |cxcvx
+
         setting_layer {
             label = "SETTING";
             bindings = <
         &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-        &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none  &reset             &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
+        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR             &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none        &none
         &none           &none           &none           &none           &none  &none              &kp HOME     &kp END      &none        &none        &none        &none
                                                   
                                         
