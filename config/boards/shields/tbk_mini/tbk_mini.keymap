@@ -18,28 +18,25 @@
 / {
     macros {
         macro_phone: macro_phone {
-            // 18568276196
+            // 1351
             label = "MACRO_PHONE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = < &kp N1 &kp N8 &kp N5 
-                    &kp N6 &kp N8 &kp N2 &kp N7 
-                    &kp N6 &kp N1 &kp N9 &kp N6>
+                = < &kp N1 &kp N3 &kp N5  &kp N1>
                 ;
         };
         macro_email_q: macro_email_q {
-            // chenzhihao0126@gmail.com
+            // 2894512440@qq.com
             label = "MACRO_EMAIL_QQ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings 
-                = < &kp C &kp H &kp E &kp N 
-                    &kp Z &kp H &kp I 
-                    &kp H &kp A &kp O 
-                    &kp N0 &kp N1 &kp N2 &kp N6 
+                = < &kp N2 &kp N8 &kp N9 &kp N4
+                    &kp N5 &kp  N1 &kp N2
+                    &kp N4 &kp N4 &kp N0 
                     &kp AT 
-                    &kp G &kp M &kp A &kp I &kp L 
+                    &kp Q &kp Q 
                     &kp DOT 
                     &kp C &kp O &kp M>
                 ;
