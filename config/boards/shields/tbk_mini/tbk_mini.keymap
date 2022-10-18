@@ -77,8 +77,8 @@
    &mt TAB ESC  &kp Q &kp W &kp E &kp R &kp T               &kp Y   &kp U &kp I     &kp O   &kp P    &kp MINUS
    &kp ENTER &kp A &kp S &kp D &kp F &kp G                  &kp H   &kp J &kp K     &lt 3 L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B                  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
-   &kp LC(C)  &kp LC(V) &gqt LSHFT BSPC &lt 2 SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
-   &tog 2  &mo 3 &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 4  &kp EQUAL                      
+   &kp LC(C)  &kp LC(V) &kp  BSPC &lt 2 SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
+   &mo 1  &mo 2 &mt LCTRL)) LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 4  &kp EQUAL                      
             >;
         };
 
@@ -144,7 +144,7 @@
             label = "SETTING";
             bindings = <
         &none &none &none &none &none &none                                                  &none &none &none &none &none &none
-         &none &none &none &none &none &none                                                  &none &none &none &none &none &none
+        &kp F4 &none &none &none &none &none                                                  &none &none &none &none &none &none
         &none &none &none &none &none &none                                                  &none &none &none &none &none &none
          &none &none &none &none &none &none                                                  &none &none &none &none &none &none
          &none &none &none &none                                                              &none &none &none &none
