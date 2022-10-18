@@ -97,7 +97,7 @@
      &none &none &none &none &none &none                 &none &none &none &none &none &none       
      &kp ESC   &kp EXCL  &kp AT   &kp HASH &kp DLLR   &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp DEL
      &bt BT_SEL 2 &bt BT_SEL 3 &none &none &bootloader &bootloader         &bootloader      &bootloader    &none &none &reset &reset
-    BT_SEL 4 &bt BT_CLR      
+                                                                                                   
         
          >;
         };
