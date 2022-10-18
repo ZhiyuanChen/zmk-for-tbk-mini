@@ -1,4 +1,4 @@
-/*
+fdfd/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -64,7 +64,7 @@
    &mt TAB ESC  &kp Q &kp W &kp E &kp R &kp T               &kp Y   &kp U &kp I     &kp O   &kp P    &kp MINUS
    &kp ENTER &kp A &kp S &kp D &kp F &kp G                  &kp H   &kp J &kp K     &mt 3 L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B                  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
-   &kp LC(C)  &kp LC(V) &mt LSHFT BSPC &lt NUMBER SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
+   &kp LC(C)  &kp LC(V) &ht_hp LSHFT BSPC &lt NUMBER SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
    &tog 2  &mo 3 &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 4  &kp EQUAL                      
             >;
         };
