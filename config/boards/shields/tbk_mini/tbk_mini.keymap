@@ -48,18 +48,7 @@
        
     };
     
-   behaviors {
-        gqt: global-quick-tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "GLOBAL_QUICK_TAP";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-       };
-    };
+
 
 
     keymap {
@@ -78,7 +67,7 @@
    &kp ENTER &kp A &kp S &kp D &kp F &kp G                  &kp H   &kp J &kp K     &lt 3 L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B                  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V) &kp  BSPC &lt 2 SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
-   &mo 2  &mo 3 &mt LCTRL)) LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 4  &kp EQUAL                      
+   &mo 2  &mo 3 &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 4  &kp EQUAL                      
             >;
         };
 
