@@ -83,8 +83,8 @@
     &macro_phone &macro_email_q  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PLUS   &none &kp N7   &kp N8   &kp N9  &none &kp EQUAL 
     &kp STAR  &kp KP_SLASH  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp MINUS         &none  &kp N4 &kp N5  &kp N6 &none &none
     &macro_email_g &kp EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp ENTER         &kp GRAVE &kp N1 &kp N2 &kp N3 &none &none
-    &kp KP_N0 &kp DOT  &kp BSPC  &kp SPACE                                   &none &none &none &none
-     &trans &none &none &none                                                 &none &none &none &none
+    &kp KP_N0 &kp KP_DOT  &kp BSPC  &kp SPACE                                   &none &none &none &none
+     &trans   &trans &none &none                                                 &none &none &none &none
             >;
         };
 // -----------------------------------------------------------------------------------------
