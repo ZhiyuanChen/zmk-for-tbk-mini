@@ -54,28 +54,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-// -----------------------------------------------------------------------------------------
-// | TAB |  Q  |  W  |  E  |  R       |  T  |     |  Y  |  U        |  I  |  O  |  P  |   BKSP    |
-// | CTL |  A  |  S  |  D  |  F       |  G  |     |  H  |  J        |  K  |  L  |  ;  |     '     |
-// | ALT |  Z  |  X  |  C  |  V       |  B  |     |  N  |  M        |  ,  |  .  |  /  | SHFT/CLCK |
-//                    | GUI/~ | NUM/SPC | SHIFT |     | HTK/ENT | SYM/SPC  | GUI/BSPC |
+
       default_layer {
             label = "DEFAULT";
             bindings = <
    &kp GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5            &kp N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
    &mt TAB ESC  &kp Q &kp W &kp E &kp R &kp T               &kp Y   &kp U &kp I     &kp O   &kp P    &kp MINUS
-   &kp ENTER &kp A &mt LSHFT S  &lt 1 D  &lt 2 F &kp G                  &kp H   &kp J &kp K     &lt 2 L   &kp SEMI &kp SQT
+   &kp ENTER &kp A &mt LSHFT S  &lt 1 D  &lt 2 F &kp G      &kp H   &kp J &kp K     &lt 2 L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B                  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V) &kp  BSPC &kp SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
   &reset   &tog 1 &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 3  &reset     
             >;
         };
 
-// -----------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
-// | CTL |  F1 |  F2 |  F3 | F4  |  F5 |   |  ←  |  ↓  |  ↑  |  →  |     |     |
-// | ALT |  F6 |  F7 |  F8 | F9  | F10 |   | F12 | F11 |     |     |     |     |
-//                   |     |     |     |   | SET |     |     |
+
           number_layer {
             label = "NUMBER";
             bindings = <
@@ -87,11 +79,7 @@
      &trans   &trans &none &none                                                 &none &none &none &none
             >;
         };
-// -----------------------------------------------------------------------------------------
-// | ESC  |  !  |  @  |  #  |  $  |  %  |     |  ^   |  &   |  *   |  (   |  )  | DEL |
-// |      |     |     |  "  |  :  |  ~  |     |  -   |  =   |  [   |  ]   |  \  |     |
-// |      |     |     |  '  |  ;  |  `  |     |  _   |  +   |  {   |  }   | "|" |     |
-//                    |     | SET |     |     |      |      |      |
+
         symbol_layer {
             label = "SYMBOL";
             bindings = <
@@ -99,17 +87,13 @@
 &kp C_VOL_UP  &kp C_VOL_DN &kp AMPS  &kp STAR &kp LPAR  &kp RPAR         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6        
 &none &none &kp DLLR   &kp PRCNT   &kp CARET &none      &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 
  &none  &kp GRAVE &kp EXCL  &kp AT   &kp HASH &kp C_P       &none &none &none &none  &none &none
- &none &none &kp C_RW  &kp C_FF                                      &none &none &none &none 
+ &none &none &none  &none                                     &none &none &none &none 
  &none &none &none &none                                   &none &none &none &none                                                                                           
         
          >;
         };
 
-// -----------------------------------------------------------------------------------------
-// |   |   |   |   |   |   |     |   |   |   |   |   |   |
-// |   |   |   |   |   |   |     |   |   |   |   |   |   |
-// |   |   |   |   |   |   |     |   |   |   |   |   |   |
-//             |     |     |     |     |     |
+
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
@@ -122,11 +106,7 @@
             >;
         };
 
-// -----------------------------------------------------------------------------------------
-// | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ | | RGB TOG |     |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
-// | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- | |         |     |       |     |     |     |     |        |
-// |          |          |          |          | |         |     | RESET |     |     |     |     |        |
-//                                  |          | |         |     |       |     |     |cxcvx
+
 
         setting_layer {
             label = "SETTING";
