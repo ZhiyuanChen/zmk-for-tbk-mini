@@ -48,9 +48,7 @@
 
 
     keymap {
-        compatible = "zmk,keymap";
-
-
+       compatible = "zmk,keymap";
       default_layer {
             label = "DEFAULT";
             bindings = <
@@ -113,7 +111,7 @@
          &none &none &none &none &none &none                                                  &none &none &none &none &none &none
          &none &none &none &none                                                              &none &none &none &none
           &none &none &none &none                                                              &none &none &none &none  
-            >;
-        };
+           >;
+       };
    };
-
+};
