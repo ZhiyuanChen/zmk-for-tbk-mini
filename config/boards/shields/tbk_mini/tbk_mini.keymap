@@ -57,7 +57,7 @@
    &kp ENTER &kp A &mt LSHFT S  &lt 1 D  &lt 2 F &kp G      &kp H   &kp J &kp K     &lt 2 L   &kp SEMI &kp SQT
    &kp CAPS  &kp Z &kp X &kp C &kp V &kp B                  &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp BSLH
    &kp LC(C)  &kp LC(V) &kp BSPC &kp SPACE     &lt NUMBER LEFT &mt LSHFT RIGHT  &kp LBKT  &kp RBKT
-  &reset   &tog 1 &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &mo 3  &reset     
+   &mo 1 &reset  &mt LCTRL LGUI  &mt LALT DEL     &kp UP   &kp DOWN  &reset  &mo 3       
             >;
         };
 
