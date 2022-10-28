@@ -5,6 +5,8 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
+config AUTO_SHIFT_ENABLE
+	default y
 
 endif
 
