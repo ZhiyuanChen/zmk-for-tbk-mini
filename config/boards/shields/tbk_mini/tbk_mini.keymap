@@ -83,7 +83,7 @@ modcp: mod_copy {
    &kp LCTRL &kp A &kp R &kp S  &kp T  &kp D              &kp H   &kp N &kp E   &kp I   &kp O &kp SQT
  &kp LGUI  &kp Z &kp X &kp C &kp V &kp B                  &kp K    &kp M &kp COMMA &kp DOT &kp FSLH &kp GRAVE 
   &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
-  &lt 1 1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &lt 2 &tog 2   
+  &lt 1 1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &lt 2 (&tog 2)  
             >;
         };
 
