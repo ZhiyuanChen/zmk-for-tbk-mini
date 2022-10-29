@@ -11,8 +11,25 @@
 #define SYMBOL  2
 #define HOTKEY  3
 #define SETTING 4
+#define AS(keycode) &as LS(keycode) keycode
+
+
+
 
 / {
+         behaviors {
+            as: auto_shift {
+                compatible = "zmk,behavior-hold-tap";
+                label = "AUTO_SHIFT";
+                #binding-cells = <2>;
+                tapping_term_ms = <135>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+        };
+
+
     macros {
         macro_phone: macro_phone {
             // 1351
@@ -54,7 +71,7 @@
             label = "DEFAULT";
             bindings = <
   &kp EQUAL  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &lt 3 N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
-   &kp LSHFT  &kp Q &kp W &kp F &kp P &kp G                &kp J   &kp L &kp U   &kp Y   &kp SEMI   &kp BSLH  
+   &kp LSHFT   AS(Q) AS(W) &kp F &kp P &kp G                &kp J   &kp L &kp U   &kp Y   &kp SEMI   &kp BSLH  
    &kp LCTRL &kp A &kp R &kp S  &kp T  &kp D              &kp H   &kp N &kp E   &kp I   &kp O &kp SQT
  &kp LGUI  &kp Z &kp X &kp C &kp V &kp B                  &kp K    &kp M &kp COMMA &kp DOT &kp FSLH &kp GRAVE 
   &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
