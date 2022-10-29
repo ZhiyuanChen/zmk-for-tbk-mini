@@ -34,8 +34,7 @@ modcp: mod_copy {
         bindings = <&as LS(C) C>, <&kp C>;
         mods = <(MOD_LGUI | MOD_RGUI)>;
 };
-usage in keymap:
-&modcp     
+  
         };
 
 
