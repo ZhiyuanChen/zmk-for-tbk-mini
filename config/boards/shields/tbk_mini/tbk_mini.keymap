@@ -17,6 +17,18 @@
 
 
 / {
+        behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&tog  1>, <&kp N3>;
+        };
+    };
+
+
+
          behaviors {
        as: auto_shift {
         compatible = "zmk,behavior-hold-tap";
@@ -79,11 +91,11 @@ modcp: mod_copy {
             label = "DEFAULT";
             bindings = <
   &kp EQUAL  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5           &lt 3 N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
-   &kp LSHFT   AS(Q) AS(W) &kp F &kp P &kp G                &kp J   &kp L &kp U   &kp Y   &kp SEMI   &kp BSLH  
+   &kp LSHFT   AS(Q) AS(W) &td0  &kp P &kp G                &kp J   &kp L &kp U   &kp Y   &kp SEMI   &kp BSLH  
    &kp LCTRL &kp A &kp R &kp S  &kp T  &kp D              &kp H   &kp N &kp E   &kp I   &kp O &kp SQT
- &kp LGUI  &kp Z &kp X &kp C &kp V &kp B                  &kp K    &kp M &kp COMMA &kp DOT &kp FSLH &kp GRAVE 
+ &kp LGUI  &kp Z &kp X  AS(C) &kp V &kp B                  &kp K    &kp M &kp COMMA &kp DOT &kp FSLH &kp GRAVE 
   &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
-  &lt 1 1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &lt 2 (&tog 2)  
+  &lt 1 1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &lt 2 2
             >;
         };
 
