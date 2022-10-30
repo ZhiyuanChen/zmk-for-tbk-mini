@@ -131,10 +131,10 @@ modcp: mod_copy {
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-  &kp EQUAL  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5            &kp N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
-   &kp LSHFT   &kp Q &kp W &kp E   &kp R &kp T             &kp Y   &kp U &kp I     &kp O   &kp P  &kp BSLH
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G            &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
- &kp LGUI  &kp Z &kp X &kp C &kp V &kp B                &kp N  &kp M &kp COMMA &kp DOT &kp FSLH &kp GRAVE 
+  AS(EQUAL)  AS(N1) AS(N2) AS(N3) AS(N4) AS(N5)          AS(N6)  AS(N7) AS(N8)  AS(N9)  AS(N0)  AS(MINUS)  
+   &kp LSHFT  AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(BSLH)  
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G            AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
+ &kp LGUI  AS(Z) AS(X) AS(C) AS(V) AS(B)             AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)  AS(GRAVE)  
   &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
  &td0 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &td1                                                                                            
         
@@ -148,7 +148,7 @@ modcp: mod_copy {
    &none &none        &none        &none       &none &none                              &none &none &none &none &none &none
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
    &reset  &none   &none     &none  &none     &none                                     &none     &none   &none &none &none &reset
-   &none &none &none &none &none &none                                                 &kp KP_N4 &none &none &none &none &none
+   &none &none &none &none &none &none                                                &none  &none &none &none &none &none
    &none &none &none &none                                                              &none &none &none &none
    &td0 &none &none &none                                                              &none &none &none  &td0                                                    
             >;
@@ -160,7 +160,7 @@ modcp: mod_copy {
             label = "SETTING";
             bindings = <
         &none &none &none &none &none &none                                                  &none &none &none &none &none &none
-        &kp F4 &none &none &none &none &none                                                  &none &none &none &none &none &none
+        &none &none &none &none &none &none                                                  &none &none &none &none &none &none
         &none &none &none &none &none &none                                                  &none &none &none &none &none &none
          &none &none &none &none &none &none                                                  &none &none &none &none &none &none
          &none &none &none &none                                                              &none &none &none &none
