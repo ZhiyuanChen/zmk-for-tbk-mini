@@ -131,7 +131,7 @@ modcp: mod_copy {
             bindings = <
   AS(EQUAL)  AS(N1) AS(N2) AS(N3) AS(N4) AS(N5)          AS(N6)  AS(N7) AS(N8)  AS(N9)  AS(N0)  AS(MINUS)  
    &kp LSHFT  AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(BSLH)  
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G            AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
+   &kp LCTRL AS(A) AS(S) AS(D) AS(F) AS(G)            AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
  &kp LGUI  AS(Z) AS(X) AS(C) AS(V) AS(B)             AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)  AS(GRAVE)  
   &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
  &td0 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &td1                                                                                            
