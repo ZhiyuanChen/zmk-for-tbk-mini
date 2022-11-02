@@ -108,7 +108,7 @@ modcp: mod_copy {
    &mt TAB ESC  AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
    &kp ENTER AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
    &kp CAPS  AS(Z) AS(X) AS(C) AS(V) AS(B)                 AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)   AS(BSLH) 
-    &mt LSHFT LC(C)  &kp LC(V) &kp BSPC &kp SPACE     &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)      
+    &mt LSHFT LC(C) &lt 2 LC(V) &kp BSPC &kp SPACE     &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)      
   &reset   &to 1 &mt LCTRL LGUI  &mt LALT DEL     &kp LSHFT   AS(EQUAL)   &mo 3  &reset     
             >;
         };
@@ -130,8 +130,8 @@ modcp: mod_copy {
             label = "SYMBOL";
             bindings = <
 &none &none &none &none &none &none                       &none &none &none &none &none &none       
- &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR        &none &none &none &none  &none &none     
-&kp C_BRI_UP &kp C_BRI_DN &kp DLLR   &kp PRCNT   &kp CARET &none    &none &none &none &none  &none &none
+ &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR       &none &none &kp UP &none &none &none 
+&kp C_BRI_UP &kp C_BRI_DN &kp DLLR   &kp PRCNT   &kp CARET &none      &none &kp LEFT &kp DOWN &kp RIGHT  &none &none 
  &none  &kp GRAVE &kp EXCL  &kp AT   &kp HASH   &none     &none &none &none &none  &none &none
  &none &none &kp C_RW &kp C_FF                                      &none &none &none &none 
  &none &none &kp LSHFT  &none                                   &none &none &none &none                                                                                           
