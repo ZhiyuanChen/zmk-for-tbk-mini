@@ -104,12 +104,12 @@ modcp: mod_copy {
       default_layer {
             label = "DEFAULT";
             bindings = <
-   &kp GRAVE  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5            &kp N6    &kp N7     &kp N8   &kp N9     &kp N0   &kp MINUS
-   &mt TAB ESC  AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(MINUS) 
-   &kp ENTER AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
-   &kp CAPS  AS(Z) AS(X) AS(C) AS(V) AS(B)                 AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)   AS(BSLH) 
-    &mt LSHFT LC(C) &lt 2 LC(V) &kp BSPC &kp SPACE     &lt 2 LEFT  &lt 1 RIGHT    AS(LBKT)   AS(RBKT)      
-  &reset   &to 1 &mt LCTRL LGUI  &mt LALT DEL     &kp LSHFT   AS(EQUAL)   &mo 3  &reset     
+   AS(EQUAL)  AS(N1) AS(N2) AS(N3) AS(N4) AS(N5)          AS(N6)  AS(N7) AS(N8)  AS(N9)  AS(N0)  AS(MINUS)  
+   &kp LSHFT   AS(Q) AS(W) AS(F) AS(P) AS(G)              AS(J)  AS(L) AS(U)  AS(Y) AS(SEMI)  AS(BSLH )  
+   &kp LCTRL AS(A) AS(R) AS(S) AS(T)  AS(D)         AS(H) AS(N) AS(E)  AS(I)  AS(O)  AS(SQT )  
+ &kp LGUI   AS(Z) AS(X) AS(C) AS(V) AS(B)                  AS(K) AS(M)  AS(COMMA) AS(DOT) AS(FSLH)  AS(GRAVE)  
+  &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC       &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
+ &td1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &td2
             >;
         };
 
@@ -117,25 +117,24 @@ modcp: mod_copy {
           number_layer {
             label = "NUMBER";
             bindings = <
-    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                                &kp F10 &kp F7 &kp F8  &kp F9 &none  &none
-    &macro_phone &macro_email_q  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PLUS    &kp F11 &kp F7 &kp F8 &kp F9 &none&none 
-    &kp STAR  &kp KP_SLASH  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp MINUS         &kp F12   &kp F4 &kp F5 &kp F6    &none &none
-    &macro_email_g AS(EQUAL) &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp ENTER            &none  &kp F1 &kp F2 &kp F3 &none &none
-    &kp KP_N0 &kp KP_DOT  &kp BSPC  &kp SPACE                                   &none &none &none &none
-     &trans    &to 0 &to 0  &to 0                                               &none &none &none &none
+   AS(EQUAL)  AS(N1) AS(N2) AS(N3) AS(N4) AS(N5)          AS(N6)  AS(N7) AS(N8)  AS(N9)  AS(N0)  AS(MINUS)  
+   &kp LSHFT  AS(Q) AS(W) AS(E) AS(R) AS(T)           AS(Y) AS(U) AS(I)     AS(O)   AS(P)  AS(BSLH)  
+   &kp LCTRL AS(A) AS(S) AS(D) AS(F) AS(G)            AS(H) AS(J) AS(K)     AS(L)  AS(SEMI)    AS(SQT) 
+ &kp LGUI  AS(Z) AS(X) AS(C) AS(V) AS(B)             AS(N) AS(M) AS(COMMA) AS(DOT) AS(FSLH)  AS(GRAVE)  
+  &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
+ &td0 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &td2   
             >;
         };
 
         symbol_layer {
             label = "SYMBOL";
-            bindings = <
-&none &none &none &none &none &none                       &none &none &none &none &none &none       
- &kp C_VOL_UP  &kp C_VOL_DN  &kp AMPS  &kp STAR &kp LPAR  &kp RPAR       &none &none &kp UP &none &none &none 
-&kp C_BRI_UP &kp C_BRI_DN &kp DLLR   &kp PRCNT   &kp CARET &none      &none &kp LEFT &kp DOWN &kp RIGHT  &none &none 
- &none  &kp GRAVE &kp EXCL  &kp AT   &kp HASH   &none     &none &none &none &none  &none &none
- &none &none &kp C_RW &kp C_FF                                      &none &none &none &none 
- &none &none &kp LSHFT  &none                                   &none &none &none &none                                                                                           
-        
+            bindings = <                                                                                         
+    AS(F1)  AS(F2) AS(F3)  AS(F4)  AS(F5)  AS(F6)     AS(F7)  AS(F8) AS(F9)  AS(F10)  AS(F11)  AS(F12)      
+    &trans  &kp EQUAL &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS   &kp EXCL &kp HOME   &kp PG_UP &kp PG_DN  &kp END &mt C_PP PAUSE_BREAK
+     &trans &kp KP_DOT  &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp STAR         &kp AT  &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp C_NEXT
+    &trans  &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_SLASH         &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp C_PREV
+    &mt LALT LPAR  &mt LC(LS(LGUI)) RPAR &kp TAB &kp ESC                    &kp BSPC  &kp SPACE  &kp LBKT  &kp RBKT
+   &td1 &reset   &kp UP   &kp DOWN      &kp LEFT  &kp RIGHT &reset  &td0        
          >;
         };
 
@@ -145,12 +144,13 @@ modcp: mod_copy {
             bindings = <
    &none &none        &none        &none       &none &none                              &none &none &none &none &none &none
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-   &reset  &none   &none     &none   &bootloader &bootloader                             &bootloader &bootloader  &none &none &none &reset
-  &kp KP_N4 &none &none &none &none &none                                                 &kp KP_N4 &none &none &none &none &none
+   &reset  &none   &none     &none  &none     &none                                     &none     &none   &none &none &none &reset
+   &none &none &none &none &none &none                                                &none  &none &none &none &none &none
    &none &none &none &none                                                              &none &none &none &none
-   &none &none &none &none                                                              &none &none &none &none                                                     
+   &td0 &none &none &none                                                              &none &none &none  &td0                                                    
             >;
         };
+   
 
 
 
